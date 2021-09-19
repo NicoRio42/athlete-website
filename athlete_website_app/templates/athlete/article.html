@@ -1,0 +1,21 @@
+{% extends 'athlete/base.html' %}
+{% load static %}
+
+{% block title %} index {% endblock %}
+
+{% block content %}
+
+				<!-- One -->
+					<section id="article-banner" class="banner style5 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right onscroll-image-fade-in onscroll-content-fade-right" style='background-image: url("{{ article.image.url }}");'>
+						<div class="content">
+							<h1>{{ article.title }}</h1>
+						</div>
+					</section>
+
+					<section class="wrapper style1 align-center onload-content-fade-right onscroll-content-fade-right" id="sponsors">
+						<div class="inner">
+							{{ article.content_markdown|safe }}
+						</div>
+					</section>
+
+{% endblock %}

@@ -1,0 +1,71 @@
+{% extends 'athlete/base.html' %}
+{% load static %}
+
+{% block title %} index {% endblock %}
+
+{% block content %}
+
+				<!-- One -->
+					<section id="head-banner" class="banner style5 orient-left content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right onscroll-image-fade-in onscroll-content-fade-right" style='background-image: url("{{ head_banner.image.url }}");'>
+						<div class="content">
+							{% if head_banner %}
+							{{ head_banner.content_markdown|safe }}
+							{% endif %}
+						</div>
+					</section>
+
+					<section class="wrapper style1 align-center onload-content-fade-right onscroll-content-fade-right">
+						<div class="inner">
+							{% if head_text %}
+							{{ head_text.content_markdown|safe }}
+							{% endif %}
+						</div>
+					</section>
+
+					{% if article_list %}
+						{% for article in article_list %}
+						<section id="{{ article.slug }}" class="banner style1 {% cycle 'orient-right' 'orient-left' %} content-align-left image-position-center fullscreen onload-image-fade-in onload-content-fade-right onscroll-image-fade-in onscroll-content-fade-right">
+							<div class="content">
+								<h1>{{ article.title }}</h1>
+								{{ article.short_content_markdown|safe }}
+								<ul class="actions stacked">
+									<li><a href="{{ article.slug }}" class="button">Learn More</a></li>
+								</ul>
+							</div>
+							<div class="image">
+								<img src="{{ article.image.url }}" alt=""/>
+							</div>
+						</section>
+						{% endfor %}
+					{% endif %}
+
+					<section class="wrapper style1 align-center onload-content-fade-right onscroll-content-fade-right" id="sponsors">
+						<div class="inner">
+							{% if sponsor_banner %}
+							<h1>{{ sponsor_banner.title }}</h1>
+							{{ sponsor_banner.content_markdown|safe }}
+							{% endif %}
+						</div>
+
+						<!-- Gallery -->
+							<div class="gallery style2 medium lightbox onscroll-fade-in">
+
+								{% if sponsor_list %}
+									{% for sponsor in sponsor_list %}
+
+									<article>
+										<a href="{{ sponsor.url }}" class="image">
+											<img src="{{ sponsor.image.url }}" alt="" />
+										</a>
+										<div class="caption">
+											<h3>{{ sponsor.title }}</h3>
+											{{ sponsor.description_markdown|safe }}
+										</div>
+									</article>
+									{% endfor %}
+								{% endif %}
+							</div>
+
+					</section>
+
+{% endblock %}

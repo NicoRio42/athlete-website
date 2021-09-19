@@ -1,0 +1,126 @@
+{% load static %}
+
+<!DOCTYPE HTML>
+<!--
+	Story by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Nicolas Rio | French Orienteering Team</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{% static 'athlete/css/main.css' %}"/>
+		<noscript><link rel="stylesheet" href="{% static 'athlete/css/noscript.css' %}"/></noscript>
+	</head>
+	<body class="is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper" class="divided">
+
+
+				<nav role="navigation">
+					<div id="menuToggle">
+					  <!--
+					  A fake / hidden checkbox is used as click reciever,
+					  so you can use the :checked selector on it.
+					  -->
+					  <input type="checkbox"/>
+					  
+					  <!--
+					  Some spans to act as a hamburger.
+					  
+					  They are acting like a real hamburger,
+					  not that McDonalds stuff.
+					  -->
+					<!--<div class="button">-->
+					  <span></span>
+					  <span></span>
+					  <span></span>
+					<!--</div>-->
+					  <!--
+					  Too bad the menu has to be inside of the button
+					  but hey, it's pure CSS magic.
+					  -->
+					  <ul id="menu">
+						{% if article_list %}
+							{% for article in article_list %}
+								<a href="#{{ article.slug }}"><li>{{ article.title }}</li></a>
+							{% endfor %}
+						{% endif %}
+						<a href="#sponsors"><li>Sponsors</li></a>
+						<a href="#contact"><li>Contact</li></a>
+					  </ul>
+					</div>
+				  </nav>
+
+				{% block content %}{% endblock %}
+				
+				<!-- Instagram 
+				<div id="pixlee_container"></div><script type="text/javascript">window.PixleeAsyncInit = function() {Pixlee.init({apiKey:'U3Zchp5ZDoTl7xZ6MIZf'});Pixlee.addSimpleWidget({widgetId:'29949'});};</script><script src="//instafeed.assets.pxlecdn.com/assets/pixlee_widget_1_0_0.js"></script>
+				-->
+				<!-- Seven -->
+					<section class="wrapper style1 align-center" id="contact">
+						<div class="inner medium">
+							<h2>Contact</h2>
+							<form method="post" action="/athlete/">
+								{% csrf_token %}
+								<div class="fields">
+									{{ form.non_field_errors }}
+									<div class="field half">
+										{{ form.name.errors }}
+    									<label for="{{ form.name.id_for_label }}">Name:</label>
+   										{{ form.name }}
+									</div>
+									<div class="field half">
+										{{ form.email_adress.errors }}
+    									<label for="{{ form.email_adress.id_for_label }}">Email adress:</label>
+   										{{ form.email_adress }}
+									</div>
+									<div class="field">
+										{{ form.message.errors }}
+    									<label for="{{ form.message.id_for_label }}">Message:</label>
+   										{{ form.message }}
+									</div>
+									<div class="field">
+										{{ form.cc_myself.errors }}
+										{{ form.cc_myself }}
+    									<label for="{{ form.cc_myself.id_for_label }}">Message:</label>
+									</div>
+								</div>
+								<ul class="actions special">
+									<li><input type="submit" name="submit" id="submit" value="Send Message" /></li>
+								</ul>
+							</form>
+
+						</div>
+					</section>
+
+				<!-- Footer -->
+					<footer class="wrapper style1 align-center">
+						<div class="inner">
+							<ul class="icons">
+								<li><a href="https://twitter.com/nicorioo" class="icon brands style2 fa-twitter"><span class="label">Twitter</span></a></li>
+								<!--<li><a href="#" class="icon brands style2 fa-facebook-f"><span class="label">Facebook</span></a></li>-->
+								<li><a href="https://www.instagram.com/nicorioo/" class="icon brands style2 fa-instagram"><span class="label">Instagram</span></a></li>
+								<li><a href="https://www.linkedin.com/in/nicolas-rio-4441741a2/" class="icon brands style2 fa-linkedin-in"><span class="label">LinkedIn</span></a></li>
+								<li><a href="#contact" class="icon style2 fa-envelope"><span class="label">Email</span></a></li>
+							</ul>
+							<p>&copy; Nicolas Rio. All rights reserved. Design: <a href="https://html5up.net">HTML5 UP</a>.</p>
+						</div>
+					</footer>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="{% static 'athlete/js/jquery.min.js' %}"></script>
+			<script src="{% static 'athlete/js/jquery.scrollex.min.js' %}"></script>
+			<script src="{% static 'athlete/js/jquery.scrolly.min.js' %}"></script>
+			<script src="{% static 'athlete/js/browser.min.js' %}"></script>
+			<script src="{% static 'athlete/js/breakpoints.min.js' %}"></script>
+			<script src="{% static 'athlete/js/util.js' %}"></script>
+			<script src="{% static 'athlete/js/main.js' %}"></script>
+
+	</body>
+</html>

@@ -1,0 +1,9 @@
+env
+db.sqlite3
+__pycache__
+log.md
+production.py
+*.code-workspace
+migrations
+*.log
+.vscode
