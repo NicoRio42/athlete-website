@@ -7,7 +7,7 @@
 ***
 ***
 *** To avoid retyping too much info. Do a search and replace for the following:
-*** github_username, repo_name, twitter_handle, email, project_title, project_description
+*** NicoRio42, athlete-website, twitter_handle, nicolas.rio42@gmail.com, project_title, project_description
 -->
 
 
@@ -27,7 +27,7 @@
   <h3 align="center">Athlete website</h3>
 
   <p align="center">
-    The source code of my Athlete website
+    The source code of the Django app that is running my [Athlete](http://runners.worldofo.com/nicolasrio.html) website.
   </p>
 </p>
 
@@ -64,18 +64,16 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
 Here's a blank template to get started:
 **To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo_name`, `twitter_handle`, `email`, `project_title`, `project_description`
+`NicoRio42`, `athlete-website`, `twitter_handle`, `nicolas.rio42@gmail.com`, `project_title`, `project_description`
 
 
 ### Built With
 
-* []()
-* []()
-* []()
+* [Django](https://www.djangoproject.com/)
+* [Django MarkdownX](https://neutronx.github.io/django-markdownx/)
+* [HTML5 up Story tempalte](https://html5up.net/story)
 
 
 
@@ -86,38 +84,28 @@ To get a local copy up and running follow these simple steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
+Upgrade pip
+* pip
   ```sh
-  npm install npm@latest -g
+  pip install --upgrade pip
   ```
 
 ### Installation
 
 1. Clone the repo
    ```sh
-   git clone https://github.com/github_username/repo_name.git
+   git clone https://github.com/NicoRio42/athlete-website.git
    ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
-
-
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
+2. pip
+  ```sh
+  pip install requirements.txt
+  ```
 
 
 <!-- ROADMAP -->
 ## Roadmap
 
-See the [open issues](https://github.com/github_username/repo_name/issues) for a list of proposed features (and known issues).
+See the [open issues](https://github.com/NicoRio42/athlete-website/issues) for a list of proposed features (and known issues).
 
 
 
@@ -144,34 +132,22 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Nicolas Rio - nicolas.rio42@gmail.com
 
-Project Link: [https://github.com/github_username/repo_name](https://github.com/github_username/repo_name)
-
-
-
-<!-- ACKNOWLEDGEMENTS -->
-## Acknowledgements
-
-* []()
-* []()
-* []()
-
-
-
+Project Link: [https://github.com/NicoRio42/athlete-website](https://github.com/NicoRio42/athlete-website)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo_name/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo_name/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo_name/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo_name/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo_name/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/NicoRio42/repo.svg?style=for-the-badge
+[contributors-url]: https://github.com/NicoRio42/athlete-website/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/NicoRio42/repo.svg?style=for-the-badge
+[forks-url]: https://github.com/NicoRio42/athlete-website/network/members
+[stars-shield]: https://img.shields.io/github/stars/NicoRio42/repo.svg?style=for-the-badge
+[stars-url]: https://github.com/NicoRio42/athlete-website/stargazers
+[issues-shield]: https://img.shields.io/github/issues/NicoRio42/repo.svg?style=for-the-badge
+[issues-url]: https://github.com/NicoRio42/athlete-website/issues
+[license-shield]: https://img.shields.io/github/license/NicoRio42/repo.svg?style=for-the-badge
+[license-url]: https://github.com/NicoRio42/athlete-website/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/github_username
+[linkedin-url]: https://linkedin.com/in/NicoRio42
