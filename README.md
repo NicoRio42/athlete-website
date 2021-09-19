@@ -52,9 +52,9 @@ To get a local copy up and running follow these simple steps.
 
 Upgrade pip
 * pip
-  ```sh
-  pip install --upgrade pip
-  ```
+   ```sh
+   pip install --upgrade pip
+   ```
 
 ### Installation
 
@@ -63,9 +63,9 @@ Upgrade pip
    git clone https://github.com/NicoRio42/athlete-website.git
    ```
 2. pip
-  ```sh
-  pip install requirements.txt
-  ```
+   ```sh
+   pip install requirements.txt
+   ```
 
 
 <!-- ROADMAP -->
