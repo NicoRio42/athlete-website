@@ -21,16 +21,10 @@
 *** https://www.markdownguide.org/basic-syntax/#reference-style-links
 -->
 
-<!-- PROJECT LOGO -->
-<br />
-<p align="center">
-  <h3 align="center">Athlete website</h3>
 
-  <p align="center">
-    The source code of the Django app that is running my [Athlete](http://runners.worldofo.com/nicolasrio.html) website.
-  </p>
-</p>
+# Athlete website</h3>
 
+The source code of the Django app that is running my [Athlete](http://runners.worldofo.com/nicolasrio.html) website.
 
 
 <!-- TABLE OF CONTENTS -->
@@ -50,12 +44,10 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#contributing">Contributing</a></li>
     <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgements">Acknowledgements</a></li>
   </ol>
 </details>
 
@@ -64,9 +56,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-Here's a blank template to get started:
-**To avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`NicoRio42`, `athlete-website`, `twitter_handle`, `nicolas.rio42@gmail.com`, `project_title`, `project_description`
+
 
 
 ### Built With
